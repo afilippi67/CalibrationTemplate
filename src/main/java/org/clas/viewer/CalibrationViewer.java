@@ -86,6 +86,7 @@ public final class CalibrationViewer implements IDataEventListener, ActionListen
         // create data processor panel
         processorPane = new DataSourceProcessorPane();
         processorPane.setUpdateRate(10000);
+        processorPane.addEventListener(this);
 
         // compose main panel
         mainPanel.add(splitPanel);
